@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="website icon" type="icon" href="imgpage/imgPage.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cssfile/all.min.css" />
+    <link rel="stylesheet" href="cssfile/bootstrap.min.css" />
+    <link rel="stylesheet" href="cssfile/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="cssfile/css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ramadan Zone</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="logoText">
+            <img
+              src="imgpage/imgPage.png"
+              alt="Logo"
+              width="90"
+              height="90"
+              class="d-inline-block align-text-top"
+            />
+            <h4>Ramadan Zone</h4>
+          </div>
+          <nav class="" id="nav-menu">
+            <div class="list1"></div>
+            <div class="list2"></div>
+            <div class="list3"></div>
+          </nav>
+        </a>
+
+        <div class="infoNav" id="Toggle-menu1">
+          <a href="#RADIO"  class="radio"><h5>Ramadan Radio</h5></a>
+
+       
+          <div class="language">
+            <i class="fa-solid fa-language fa-bounce"></i>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-gear fa-spin"></i>
+            </span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Settings
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-x fa-beat"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Digital Font</a
+                  >
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input Digit"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckChecked"
+                      checked
+                    />
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">12 hours (am/pm)</a>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input hours12"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckChecked"
+                    />
+                  </div>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Show Date</a>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input DATE"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckChecked"
+                      checked
+                    />
+                  </div>
+                </li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tools
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#Islamic">Islamic prayer times</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#ALARM">Alarm Clock</a></li>
+                    <li><a class="dropdown-item" href="#TIMES">Time Now</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#RADIO">Ramadan Radio</a>
+                    </li>
+                       <li>
+                      <a class="dropdown-item" href="#CountDown">Eid ul Fitr</a>
+                    </li>
+                       <li>
+                      <a class="dropdown-item" href="#fastingdays">Ramadan fasting days</a>
+                    </li>
+                       <li>
+                      <a class="dropdown-item" href="#RamadanDuas">Ramadan Duas</a>
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  src="imgpage/imgPage.png"
+                  alt="Logo"
+                  width="170"
+                  height="170"
+                  style="padding-top: 20px"
+                  class="d-inline-block align-text-top"
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--settings-->
+      </div>
+      <!--settings-->
+    </nav>
+    <div class="timeNow" id="TIMES">
+      <div class="container">
+        <div class="boxTime">
+          <div class="times1">
+            <h3>Time Now</h3>
+            <div class="times">
+              <div class="hour"></div>
+              <div class="minute"></div>
+              <div class="second"></div>
+              <div class="hightMorning"></div>
+            </div>
+            <div class="date"></div>
+            <!-- Button trigger modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule" id="Islamic">
+      <h1 class="headSection">Islamic prayer times</h1>
+      <div class="container">
+        <div class="boxSchedule">
+          <div class="infoSchedule">
+            <h1>RAMADAN KAREEM</h1>
+            <h4>SAHRI AND IFTER TIME SCHEDULE</h4>
+            <p>
+The month of Ramadan is the ninth month in the Hijri calendar, and it is a special month for Muslims in which the Qur’an was revealed to the Prophet Muhammad, may God’s prayers and peace be upon him, on Laylat al-Qadr, one of the last ten nights of Ramadan.
+<br>
+<br>
+The month of Ramadan is an important month in the Islamic calendar, and in the UAE, as it is considered the month of goodness, piety, and charity. During the month, Muslims abstain from food and drink during the period between sunrise and sunset. Fasting Ramadan is the fourth of the five pillars of Islam.
+<br>
+<br>
+The beginning and end of the month of Ramadan are determined by the lunar Islamic calendar, by examining the crescent and seeing it visually in the sky, and it lasts either 29 or 30 days.
+            </p>
+          </div>
+          <div class="box">
+            <h5>TODAY'S SCHEDULE</h5>
+            <div class="dateRamadan">
+              <div class="date1"></div><select class="form-select" id="Salat" aria-label="Default select example">
+  <option value="1" data-day="23">23/3</option>
+  <option value="2" data-day="24">24/3</option>
+  <option value="3" data-day="25">25/3</option>
+  <option value="4" data-day="26">26/3</option>
+  <option value="5" data-day="27">27/3</option>
+  <option value="6" data-day="28">28/3</option>
+  <option value="7" data-day="29">29/3</option>
+  <option value="8" data-day="30">30/3</option>
+  <option value="9" data-day="31">31/3</option>
+  <option value="10" data-day="1">1/4</option>
+  <option value="11" data-day="2">2/4</option>
+  <option value="12" data-day="3">3/4</option>
+  <option value="13" data-day="4">4/4</option>
+  <option value="14" data-day="5">5/4</option>
+  <option value="15" data-day="6">6/4</option>
+  <option value="16" data-day="7">7/4</option>
+  <option value="17" data-day="8">8/4</option>
+  <option value="18" data-day="9">9/4</option>
+  <option value="19" data-day="10">10/4</option>
+  <option value="20" data-day="11">11/4</option>
+  <option value="21" data-day="12">12/4</option>
+  <option value="22" data-day="13">13/4</option>
+  <option value="23" data-day="14">14/4</option>
+  <option value="24" data-day="15">15/4</option>
+  <option value="25" data-day="16">16/4</option>
+  <option value="26" data-day="17">17/4</option>
+  <option value="27" >18/4</option>
+  <option value="28">19/4</option>
+  <option value="29">20/4</option>
+  <option value="30">21/4</option>
+</select>
+            </div>
+            <div class="daysRamadan">
+              <div class="Islamicprayertimes">
+                <div class="Fajr">Fajr - 05:14 AM</div>
+                <div class="Sunrise">Sunrise - 06:41 AM</div>
+                <div class="Dhuhr">Dhuhr - 12:50 PM</div>
+                <div class="Asr">Asr - 16:19 PM</div>
+                <div class="Maghrib">Maghrib - 18:58 PM</div>
+                <div class="Isha">Isha - 20:28 PM</div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Ramadan Radio-->
+    <div class="ramadanRadios" id="RADIO">
+      <div class="countDown">
+        <img id="img2" src="imgpage/f1.png" alt="" srcset="" />
+        <h1 class="headSection text-start "id="CountDown">Eid ul Fitr</h1>
+        <div class="h4Countdown">
+Eid al-Fitr is an Islamic holiday on the first day of the month of Shawwal, when Muslims break their fast, celebrating the completion of the worship of fasting in the month of Ramadan, the remaining time for it.
+        </div>
+        <div class="downTimer"></div>
+        <div class="FajirMaghrib">
+          <div id="Fajr">Fajr - 05:14 AM</div>
+          <div id="Maghrib">Maghrib - 18:58 PM</div>
+        </div>
+        <img id="img1" src="imgpage/f1.png" alt="" srcset="" />
+      </div>
+      <div class="radios">
+        <div class="img-radio">
+          <img src="imgpage/Radio.jpg" alt="" />
+          <h1>Ramadan Radio</h1>
+          <p class="radioServer">Radio Server</p>
+        </div>
+        <div class="info-radio">
+          <div class="icon-radio">
+            <i class="fa-solid fa-backward-step"></i>
+            <div class="playPause">
+              <i class="fas fa-play"></i>
+              <audio src="" class="audios"></audio>
+              <i class="fas fa-pause"></i>
+            </div>
+            <i class="fa-solid fa-forward-step"></i>
+          </div>
+          <div class="VolumeSpeed">
+            <div class="Volume">
+              <p>Volume</p>
+              <input type="range" name="" id="volume" class="Volumes" />
+            </div>
+            <div class="Speed">
+              <p>Speed</p>
+              <input type="range" name="" id="speed" class="Speeds" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Ramadan Radio-->
+    <div class="TimerAlarm" id="ALARM">
+
+      <div class="container">
+                <h1 class="headSection">Alarm Clock</h1>
+
+        <div class="boxTime">
+          <div class="times1">
+            <h3 class="headerAlarm">Alarm Clock</h3>
+            <div id="Alarmtimes">
+              
+            </div>
+          
+ <button
+              type="button"
+              class="btn btn-primary BTN"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Set Alarm
+            </button>
+<div class="btn-group stopAlarm" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-info">Clear Alarm</button>
+  </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Edit Alarm
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >                <i class="fa-solid fa-x fa-beat"></i>
+</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="hoursAlarm">
+                      <h6>Hours</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        
+                        <option value="1" >01AM</option>
+                        <option value="2">02AM</option>
+                        <option value="3">03AM</option>
+                        <option value="4">04AM</option>
+                        <option value="5">05AM</option>
+                        <option value="6">06AM</option>
+                        <option value="7">07AM</option>
+                        <option value="8">08AM</option>
+                        <option value="9">09AM</option>
+                        <option value="10">10AM</option>
+                        <option value="11">11AM</option>
+                        <option value="12">12AM</option>
+                        <option value="13">13PM</option>
+                        <option value="14">14PM</option>
+                        <option value="15">15PM</option>
+                        <option value="16">16PM</option>
+                        <option value="17">17PM</option>
+                        <option value="18">18PM</option>
+                        <option value="19">19PM</option>
+                        <option value="20">20PM</option>
+                        <option value="21">21PM</option>
+                        <option value="22">22PM</option>
+                        <option value="23">23PM</option>
+                        <option value="00">00AM</option>
+                      </select>
+                    </div>
+                    <div class="minutesAlarm">
+                      <h6>Minutes</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="0"selected>00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                         <option value="24">24</option>
+                          <option value="25">25</option>
+                           <option value="26">26</option>
+                            <option value="27">27</option>
+                             <option value="28">28</option>
+                              <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                         <option value="34">34</option>
+                          <option value="35">35</option>
+                           <option value="36">36</option>
+                            <option value="37">37</option>
+                             <option value="38">38</option>
+                              <option value="39">39</option>
+                               <option value="40">40</option>
+                               <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                         <option value="44">44</option>
+                          <option value="45">45</option>
+                           <option value="46">46</option>
+                            <option value="47">47</option>
+                             <option value="48">48</option>
+                              <option value="49">49</option>
+                               <option value="50">50</option>
+                               <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                         <option value="54">54</option>
+                          <option value="55">55</option>
+                           <option value="56">56</option>
+                            <option value="57">57</option>
+                             <option value="58">58</option>
+                              <option value="59">59</option>
+                      </select>
+                    </div>
+                    <div class="soundsAlarm">
+                      <h6>Sounds</h5>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="1">Sound One</option>
+                        <option value="2">Sound Two</option>
+                        <option value="3">Sound Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlTextarea1"
+                        class="form-label"
+                        >Alarm Name</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="1"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary setAlarm">
+                      Set Alarm
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="RamadanFastingDays" id="fastingdays">
+    <h1 class="headSection">Ramadan fasting days</h1>
+      <div class="container">
+        <table class="table">
+  <thead>
+    <h3 class="headTable head11">First 1-10 Days</h3>
+    <p class="textRamadan">اللّهم اجعل لي في قلبي نورًا، وفي لساني نورًا، وفي سمعي نورًا، وفي وفي بصري نورًا، ومن فوقي نورًا، ومن تحتي نورًا، وعن يميني نورًا، وعن شمالي نورًا، ومن بين يدي نورًا، ومن خلفي نورًا، واجعل في نفسي نورًا، وأعظم لي نورًا.</p>
+    <tr>
+      <th scope="col">RAMADAN</th>
+      <th scope="col">DATE</th>
+      <th scope="col">DAY</th>
+      <th scope="col">Fajr</th>
+      <th scope="col">Sunrise</th>
+      <th scope="col">Dhuhr</th>
+      <th scope="col">Asr</th>
+      <th scope="col">Maghrib</th>
+      <th scope="col">Isha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th  scope="row">1</th>
+      <td>23-3-2023</td>
+      <td>Thursday</td>
+      <td>5:15 AM</td>
+      <td>6:32 AM</td>
+      <td>12:43 PM</td>
+      <td>4:11 PM</td>
+      <td>6:54 PM</td>
+      <td>8:11 PM</td>
+    </tr>
+    <tr class="grayColor">
+      <th scope="row">2</th>
+      <td>24-3-2023</td>
+      <td>Friday</td>
+      <td>5:14 AM</td>
+      <td>6:31 AM</td>
+      <td>12:43 PM</td>
+      <td>4:12 PM</td>
+      <td>6:55 PM</td>
+      <td>8:12 PM</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+        <td>25-3-2023</td>
+      <td>Saturday</td>
+      <td>5:12 AM</td>
+      <td>6:30 AM</td>
+      <td>12:42 PM</td>
+      <td>4:12 PM</td>
+      <td>6:55 PM</td>
+      <td>8:13 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">4</th>
+       <td>26-3-2023</td>
+      <td>Sunday</td>
+      <td>5:11 AM</td>
+      <td>6:28 AM</td>
+      <td>12:42 PM</td>
+      <td>4:12 PM</td>
+      <td>6:56 PM</td>
+      <td>8:14 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">5</th>
+    <td>27-3-2023</td>
+      <td>Monday</td>
+      <td>5:10 AM</td>
+      <td>6:27 AM</td>
+      <td>12:42 PM</td>
+      <td>4:12 PM</td>
+      <td>6:57 PM</td>
+      <td>8:14 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">6</th>
+         <td>28-3-2023</td>
+      <td>Tuesday</td>
+      <td>5:08 AM</td>
+      <td>6:26 AM</td>
+      <td>12:41 PM</td>
+      <td>4:12 PM</td>
+      <td>6:58 PM</td>
+      <td>8:15 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">7</th>
+       <td>29-3-2023</td>
+      <td>Wednesday</td>
+      <td>5:07 AM</td>
+      <td>6:25 AM</td>
+      <td>12:41 PM</td>
+      <td>4:12 PM</td>
+      <td>6:58 PM</td>
+      <td>8:16 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">8</th>
+      <td>30-3-2023</td>
+      <td>Thursday</td>
+      <td>5:06 AM</td>
+      <td>6:23 AM</td>
+      <td>12:41 PM</td>
+      <td>4:12 PM</td>
+      <td>6:59 PM</td>
+      <td>8:17 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">9</th>
+     <td>31-3-2023</td>
+      <td>Friday</td>
+      <td>5:04 AM</td>
+      <td>6:22 AM</td>
+      <td>12:41 PM</td>
+      <td>4:12 PM</td>
+      <td>7:00 PM</td>
+      <td>8:18 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">10</th>
+     <td>1-4-2023</td>
+      <td>Saturday</td>
+      <td>5:03 AM</td>
+      <td>6:21 AM</td>
+      <td>12:40 PM</td>
+      <td>4:13 PM</td>
+      <td>7:00 PM</td>
+      <td>8:18 PM</td>
+    </tr>
+  </tbody>
+</table>
+        <table class="table">
+  <thead>
+            <h3 class="headTable head22">second 11-20 Days</h3>
+                <p class="textRamadan">اللّهم رب السّماوات ورب الأرض ورب العرش العظيم، ربنا ورب كل شيء، فالق الحب والنوى، ومنزل التوراة والإنجيل والفرقان، أعوذ بك من شر كل شيء أنت آخذ بناصيته، اللّهم أنت الأول فليس قبلك شيء، وأنت الآخر فليس بعدك شيء، وأنت الظاهر فليس فوقك شيء، وأنت الباطن فليس دونك شيء، اقضِ عنا الدين، وأغننا من الفقر." رواه مسلم عن أبي هريرة.</p>
+
+    <tr>
+      <th scope="col">RAMADAN</th>
+      <th scope="col">DATE</th>
+      <th scope="col">DAY</th>
+      <th scope="col">Fajr</th>
+      <th scope="col">Sunrise</th>
+      <th scope="col">Dhuhr</th>
+      <th scope="col">Asr</th>
+      <th scope="col">Maghrib</th>
+      <th scope="col">Isha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">11</th>
+      <td>2-4-2023</td>
+      <td>Sunday</td>
+      <td>5:01 AM</td>
+      <td>6:19 AM</td>
+      <td>12:40 PM</td>
+      <td>4:13 PM</td>
+      <td>7:01 PM</td>
+      <td>8:19 PM</td>
+    </tr>
+    <tr class="grayColor">
+      <th scope="row">12</th>
+      <td>3-4-2023</td>
+      <td>Monday</td>
+      <td>5:00 AM</td>
+      <td>6:18 AM</td>
+      <td>12:40 PM</td>
+      <td>4:13 PM</td>
+      <td>7:02 PM</td>
+      <td>8:20 PM</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+       <td>4-4-2023</td>
+      <td>Tuesday</td>
+      <td>4:58 AM</td>
+      <td>6:17 AM</td>
+      <td>12:39 PM</td>
+      <td>4:13 PM</td>
+      <td>7:02 PM</td>
+      <td>8:21 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">14</th>
+         <td>5-4-2023</td>
+      <td>Wednesday</td>
+      <td>4:57 AM</td>
+      <td>6:16 AM</td>
+      <td>12:39 PM</td>
+      <td>4:13 PM</td>
+      <td>7:03 PM</td>
+      <td>8:22 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">15</th>
+       <td>6-4-2023</td>
+      <td>Thursday</td>
+      <td>4:56 AM</td>
+      <td>6:14 AM</td>
+      <td>12:39 PM</td>
+      <td>4:13 PM</td>
+      <td>7:04 PM</td>
+      <td>8:23 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">16</th>
+         <td>7-4-2023</td>
+      <td>Friday</td>
+      <td>4:54 AM</td>
+      <td>6:13 AM</td>
+      <td>12:39 PM</td>
+      <td>4:13 PM</td>
+      <td>7:04 PM</td>
+      <td>8:23 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">17</th>
+     <td>8-4-2023</td>
+      <td>Saturday</td>
+      <td>4:53 AM</td>
+      <td>6:12 AM</td>
+      <td>12:38 PM</td>
+      <td>4:13 PM</td>
+      <td>7:05 PM</td>
+      <td>8:24 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">18</th>
+      <td>9-4-2023</td>
+      <td>Sunday</td>
+      <td>4:51 AM</td>
+      <td>6:11 AM</td>
+      <td>12:38 PM</td>
+      <td>4:13 PM</td>
+      <td>7:06 PM</td>
+      <td>8:25 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">19</th>
+     <td>10-4-2023</td>
+      <td>Monday</td>
+      <td>4:50 AM</td>
+      <td>6:09 AM</td>
+      <td>12:38 PM</td>
+      <td>4:13 PM</td>
+      <td>7:06 PM</td>
+      <td>8:26 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">20</th>
+       <td>11-4-2023</td>
+      <td>Tuesday</td>
+      <td>4:49 AM</td>
+      <td>6:08 AM</td>
+      <td>12:37 PM</td>
+      <td>4:13 PM</td>
+      <td>7:07 PM</td>
+      <td>8:27 PM</td>
+    </tr>
+    
+  </tbody>
+</table>
+        <table class="table">
+  <thead>
+        <h3 class="headTable head33">Third 21-29 Days</h3>
+                <p class="textRamadan">اللّهم مالك الملك، تؤتي الملك من تشاء، وتنزع الملك ممن تشاء، وتعز من تشاء، وتذل من تشاء، بيدك الخير إنّك على كل شيء قدير، رحمن الدنيا والآخرة ورحيمهما، تعطيهما من تشاء، وتمنع منهما من تشاء، ارحمني رحمةً تغنيني بها عن رحمة من سواك." رواه الألباني عن أنس بن مالك</p>
+
+    <tr>
+      <th scope="col">RAMADAN</th>
+      <th scope="col">DATE</th>
+      <th scope="col">DAY</th>
+      <th scope="col">Fajr</th>
+      <th scope="col">Sunrise</th>
+      <th scope="col">Dhuhr</th>
+      <th scope="col">Asr</th>
+      <th scope="col">Maghrib</th>
+      <th scope="col">Isha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">21</th>
+          <td>12-4-2023</td>
+      <td>Wednesday</td>
+      <td>4:47 AM</td>
+      <td>6:07 AM</td>
+      <td>12:37 PM</td>
+      <td>4:13 PM</td>
+      <td>7:08 PM</td>
+      <td>8:28 PM</td>
+    </tr>
+    <tr class="grayColor">
+      <th scope="row">22</th>
+          <td>13-4-2023</td>
+      <td>Thursday</td>
+      <td>4:46 AM</td>
+      <td>6:06 AM</td>
+      <td>12:37 PM</td>
+      <td>4:13 PM</td>
+      <td>7:08 PM</td>
+      <td>8:29 PM</td>
+    </tr>
+    <tr>
+      <th scope="row">23</th>
+       <td>14-4-2023</td>
+      <td>Friday</td>
+      <td>4:44 AM</td>
+      <td>6:05 AM</td>
+      <td>12:37 PM</td>
+      <td>4:13 PM</td>
+      <td>7:09 PM</td>
+      <td>8:30 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">24</th>
+      <td>15-4-2023</td>
+      <td>Saturday</td>
+      <td>4:43 AM</td>
+      <td>6:03 AM</td>
+      <td>12:36 PM</td>
+      <td>4:13 PM</td>
+      <td>7:10 PM</td>
+      <td>8:30 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">25</th>
+        <td>16-4-2023</td>
+      <td>Sunday</td>
+      <td>4:42 AM</td>
+      <td>6:02 AM</td>
+      <td>12:36 PM</td>
+      <td>4:13 PM</td>
+      <td>7:11 PM</td>
+      <td>8:31 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">26</th>
+           <td>17-4-2023</td>
+      <td>Monday</td>
+      <td>4:40 AM</td>
+      <td>6:01 AM</td>
+      <td>12:36 PM</td>
+      <td>4:13 PM</td>
+      <td>7:11 PM</td>
+      <td>8:32 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">27</th>
+           <td>18-4-2023</td>
+      <td>Tuesday</td>
+      <td>4:39 AM</td>
+      <td>6:00 AM</td>
+      <td>12:36 PM</td>
+      <td>4:13 PM</td>
+      <td>7:12 PM</td>
+      <td>8:33 PM</td>
+    </tr>
+       <tr class="grayColor">
+      <th scope="row">28</th>
+               <td>19-4-2023</td>
+      <td>Wednesday</td>
+      <td>4:37 AM</td>
+      <td>5:59 AM</td>
+      <td>12:35 PM</td>
+      <td>4:13 PM</td>
+      <td>7:13 PM</td>
+      <td>8:34 PM</td>
+    </tr>
+       <tr>
+      <th scope="row">29</th>
+               <td>20-4-2023</td>
+      <td>Wednesday</td>
+      <td>4:36 AM</td>
+      <td>5:58 AM</td>
+      <td>12:35 PM</td>
+      <td>4:13 PM</td>
+      <td>7:13 PM</td>
+      <td>8:35 PM</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+    <div class="goUp DisplayHidding">
+<i class="fa-solid fa-up-long fa-beat"></i>    </div>
+    <!--footer-->
+
+<div class="RamadanDuas" id="RamadanDuas">
+    <div class="container">
+      <h1 class="headSection dua1">Ramadan Duas</h1>
+
+      <p class="dua"> <span class="ColorDua">Dua (supplication)</span> is a beautiful and important act of worship that Muslims should adhere to throughout the year, not just during the month of Ramadan. Below are a collection of duas that can be recited during Ramadan, this blessed month of spiritual supplication that helps the believer continue fasting, praying, doing good deeds, and drawing closer to Allah.</p>
+      <ul class="list-group">
+  <li class="list-group-item">"اللهم بلغنا رمضان"
+    <p class="textColor">هذا الدعاء يعبر عن رغبة المؤمن في الوصول إلى شهر رمضان المبارك واستغلاله لتحقيق الأهداف الروحية والدينية
+</p>
+  </li>
+  <li class="list-group-item">"اللهم أعنا على صيام رمضان"
+    <p class="textColor">هذا الدعاء يعبر عن طلب المساعدة من الله للصيام والصلاة خلال شهر رمضان، والتمتع بالثواب الذي يعده الله لمن يقوم بهذه العبادات
+</p>
+  </li>
+  <li class="list-group-item">"اللهم اجعل رمضان شهر خير وبركة"
+<p class="textColor">
+  هذا الدعاء يعبر عن الرغبة في أن يكون شهر رمضان مليئًا بالخير والبركة، وأن ينال المسلمون الثواب الأكبر من الصيام والصلاة والأعمال الخيرية
+</p>
+  </li>
+  <li class="list-group-item">"اللهم اغفر لي وارحمني في رمضان"
+    <p class="textColor">
+      هذا الدعاء يعبر عن الرغبة في الحصول على مغفرة الله ورحمته خلال شهر رمضان، وتجاوز الذنوب والخطايا التي ارتكبها المسلم في السابق
+    </p>
+  </li>
+  <li class="list-group-item">"اللهم بارك لنا في رمضان وفي أعمالنا"
+    <p class="textColor">هذا الدعاء يعبر عن الرغبة في أن يبارك الله للمؤمنين في شهر رمضان، وأن يزيد في أعمالهم الخيرية والعبادية ويجعلها مقبولة في عنده.
+
+</p>
+  </li>
+</ul>
+<h2 class="headSection dua2">Duas from the Qur'an to pray in Ramadan</h2>
+    <ul class="list-group">
+  <li class="list-group-item">"رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ" - سورة آل عمران: 8
+
+  </li>
+  <li class="list-group-item">"اللهم أعنا على صيام رمضان"
+    "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ" - سورة البقرة: 250
+
+  </li>
+  <li class="list-group-item">"اللهم اجعل رمضان شهر خير وبركة"
+"ربّ اشرح لي صدري ويسّر لي أمري واحلل عقدة من لساني يفقهوا قولي" سورة طه الآية 25 - 28
+
+  </li>
+  <li class="list-group-item">"لا إله إلا أنت سبحانك إنّي كنت من الظالمين." سورة الأنبياء - الآية 87
+  </li>
+  <li class="list-group-item">"ربنا اغفر لنا ولإخواننا الذين سبقونا بالإيمان ولا تجعل في قلوبنا غلًا للذين آمنوا ربنا إنك رؤوف رحيم." سورة الحشر - الآية 10
+
+  </li>
+</ul>
+
+<h2 class="headSection dua3">Ramadan supplications from the noble hadiths of the Prophet</h2>
+    <ul class="list-group">
+  <li class="list-group-item">"اللّهم إنّي أعوذ بك من الهمِّ والحَزَن والعجز والكسل والبخل والجبن وضلع الدَّيْن وغلبة الرجال." رواه البخاري عن أنس بن مالك.
+
+  </li>
+  <li class="list-group-item">"يا حي يا قيوم برحمتك أستغيث أصلح لي شأني كله ولا تكلني إلى نفسي طَرْفة عيْن." رواه المنذري عن أنس بن مالك.
+
+  </li>
+  <li class="list-group-item">"اللّهم رحمتك أرجو فلا تكلني إلى نفسي طَرْفة عين وأصلح لي شأني كله لا إله إلا أنت" رواه الألباني عن نفيع بن الحارث الثقفي.
+
+  </li>
+  <li class="list-group-item">"اللّهم اجعل لي في قلبي نورًا، وفي لساني نورًا، وفي سمعي نورًا، وفي وفي بصري نورًا، ومن فوقي نورًا، ومن تحتي نورًا، وعن يميني نورًا، وعن شمالي نورًا، ومن بين يدي نورًا، ومن خلفي نورًا، واجعل في نفسي نورًا، وأعظم لي نورًا." رواه مسلم عن عبد الله بن عباس.
+
+  </li>
+</ul>
+    </div>
+    </div>
+
+
+
+<div class="footer">
+    <div class="container">
+    <div class="foot">
+        <div class="logoText">
+          <div class="imgLogo">
+              <img
+              src="imgpage/imgPage.png"
+              alt="Logo"
+              width="90"
+              height="90"
+              class="d-inline-block align-text-top"
+            />
+            <h4>Ramadan Zone&reg;</h4>
+          </div>
+             <div class="socialMedia">
+            <div class="boxSocial"><a target="_blank" href="https://www.facebook.com/profile.php?id=100011794534248"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="boxSocial"><a href="https://www.instagram.com/rami.ali.matarneh/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a> </div>
+            <div class="boxSocial"> <a href="https://www.linkedin.com/in/rami-almatarneh/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> </div>
+            <div class="boxSocial"> <a href="https://github.com/Rami-Ali-ALMatarneh" target="_blank"><i class="fa-brands fa-github-alt"></i></a> </div>
+            <div class="boxSocial"> <a href="https://www.youtube.com/@opscode59" target="_blank"><i class="fa-brands fa-youtube"></i></a> </div>
+
+          </div>
+          </div>
+          <div class="links">
+            <h3>Links </h3>
+            <li>
+                      <a class="" href="#TIMES"><i class="fa-solid fa-forward"></i>Time Now
+</a>
+                    </li><li>
+                      <a class="" href="#Islamic"><i class="fa-solid fa-forward"></i>Islamic prayer times</a>
+                    </li><li>
+                      <a class="" href="#CountDown"><i class="fa-solid fa-forward"></i>Count Down Timer
+</a>
+                    </li><li>
+                      <a class="" href="#RADIO"><i class="fa-solid fa-forward"></i>Ramadan Radio
+</a>
+                    </li><li>
+                      <a  href="#ALARM"><i class="fa-solid fa-forward"></i>Alarm Clock
+</a>
+                    </li>
+                    </li><li>
+                      <a  href="#fastingdays"><i class="fa-solid fa-forward"></i>Ramadan fasting days
+
+</a>
+                    </li>
+                    </li><li>
+                      <a  href="#RamadanDuas"><i class="fa-solid fa-forward"></i>Ramadan Duas
+
+</a>
+                    </li>
+          </div>
+          <div class="contactUs">
+            <h3>ContactUs</h3>
+
+            <div class="email"><h6>EMAIL: <a href="#">ramimatarneh76@gmail.com</a></h6></div>
+                       <div class="phone"><h6>Phone: <a href="#">+962123456789</a></h6></div>
+                                <img id="img2" src="imgpage/f1.png" alt="" srcset="" />
+
+          </div>
+  </div></div>
+      <p class="copyRight">&copy;Copyright2023 All rights reserved | This template is made with by Rami Ali AL-Matarneh</p>
+</div>
+    <!--footer-->
+    <script src="jsfile/Timer.js"></script>
+    <script src="jsfile/countDown.js"></script>
+    <script src="jsfile/amPam.js"></script>
+    <script src="jsfile/js.js"></script>
+    <script src="jsfile/timesDate.js"></script>
+    <script src="jsfile/radio.js"></script>
+    <script src="jsfile/Alarm.js"></script>
+    <script src="jsfile/SCHEDULE.js"></script>
+    <script src="jsfile/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
